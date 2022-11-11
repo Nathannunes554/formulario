@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> Crie seu persongaem </title>
+    <meta name="author" content="Nathan Moreira :: nathanmoreiranunes@gmail.com">
+    <meta name="description" content="Formulário de criação de personagem">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+  <main id="geral">
+    <form id="formulario"action="#" method="get">
+
+        <label for="name_id">Nome do personagem</label><br>
+        <input type="text" name="text" placeholder="Digite o nome..." maxlength="40" minlength="0" required>
+        <br><br>
+
+        <label for="senha_id">Senha</label><br>
+        <input type="password" name="senha" placeholder="Digite a senha..."  required>
+        <br><br>
+
+        <label for="classes">Qual será sua classe?</label>
+        <br>
+        <select name="select" id="classes" multiple="multiple" size="4" required>
+            <option value="Barbáro">Barbáro</option>
+            <option value="Paladino">Paladino</option>
+            <option value="Ladino">Ladino</option>
+            <option value="Mago">Mago</option>
+            <option value="Druida">Druida</option>
+            <option value="Necromante">Necromante</option>
+            <option value="Piromante">Piromante</option>
+            <option value="Guerreiro">Guerreiro</option>
+            <option value="Bruxo">bruxo</option>
+            <option value="Clérigo">Clérigo</option>
+            <option value="Arqueiro">Arqueiro</option>
+        </select>
+        <br><br>
+
+        <label for="classes">Humor do personagem?</label>
+        <br>
+        <select name="select" id="classes" multiple="multiple" size="4" required>
+            <option value="lealbom">Leal bom</option>
+            <option value="lealneutro">Leal neutro</option>
+            <option value="lealmal">Leal mal</option>
+            <option value="neutrobom">Neutro bom</option>
+            <option value="neutro">Neutro</option>
+            <option value="Neutromau">Neutro mau</option>
+            <option value="caoticobom">Caótico bom</option>
+            <option value="caoticoneutro">Caótico neutro</option>
+            <option value="caoticomau">Caótico mau</option>
+        </select>
+        <br><br>
+
+        <label for="raça">Qual é sua raça?</label><br>
+        <input type="checkbox" name="check[]">Humano
+        <input type="checkbox" name="check[]">Troll
+        <input type="checkbox" name="check[]">Repitíliano
+        <br>
+        <input type="checkbox" name="check[]">Draconiano
+        <input type="checkbox" name="check[]">Elfo
+        <input type="checkbox" name="check[]">Morto-vivo
+        <br><br>
+
+        <label for="social_id">Classe social</label><br>
+        <input type="radio" name="radio">Classe-alta
+        <input type="radio" name="radio">Classe-media
+        <input type="radio" name="radio">Classe-baixa
+        <br><br>
+
+        <label for="imagem_id">Ilustração do personagem</label><br>
+        <input type="file" name="imagem" value="imagem_id">
+        <br><br>
+
+        <label for="historia_id">Nos conte sua história</label><br>
+        <textarea name="name" rows="8" cols="50"></textarea>
+        <br><br>
+
+        <input type="submit">
+        &nbsp;&nbsp;
+        <input type="reset">
+
+    </form>
+  </main>
+</body>
+</html>
